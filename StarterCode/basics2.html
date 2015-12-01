@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <!-- To use a canvas, we need to access it from our JavaScript code -->
+    <script>
+      function init() {
+        // This line will grab the canvas element by sending id property of
+        // the canvas to the getElementById() function
+      	var canvas=document.getElementById("myCanvas");
+
+        // from the canvas we need to grab it's context.
+      	var context=canvas.getContext("2d");
+        // from here, we can actually start calling methods on ctx to start
+        // drawing on our canvas
+      }
+    </script>
+  </head>
+
+  <body onload="init()">
+    <!-- In order to use the canvas, we need to have the canvas tag -->
+    <!-- Width and Height parameters are optional. They are used to allocate
+          width and height to the canvas on the webpage -->
+    <!-- Like a canvas in the real world, this canvas tag will only give is
+          some physical space to start painting on. We will need to take a few
+          more steps to get an object that will allow us to start drawing -->
+  	<canvas id="myCanvas" width="200" height="200"></canvas>
+  </body>
+</html>
